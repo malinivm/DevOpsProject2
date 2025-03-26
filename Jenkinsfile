@@ -12,7 +12,8 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t app .'
+                sh 'docker build -t devops-project2 .
+'
             }
         }
         stage('Authenticate to ECR') {
@@ -22,7 +23,7 @@ pipeline {
         }
         stage('Push Image to ECR') {
             steps {
-                sh 'docker tag app:latest $ECR_REPO:latest'
+                sh 'docker tag devops-project2:latest $ECR_REPO:latest'
                 sh 'docker push $ECR_REPO:latest'
             }
         }
