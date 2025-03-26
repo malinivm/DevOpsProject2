@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/malinivm/DevOpsProject2.git'
+                git branch: 'main', url: 'https://github.com/malinivm/DevOpsProject2.git'
             }
         }
         stage('Build Docker Image') {
