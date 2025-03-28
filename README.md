@@ -1,10 +1,10 @@
-Containerized Application Deployment on AWS ECS
+#Containerized Application Deployment on AWS ECS
 
-Overview
+#Overview
 
 This project demonstrates the deployment of a Python-based web application on AWS Elastic Container Service (ECS) using Fargate. The application is containerized with Docker, stored in AWS Elastic Container Registry (ECR), and deployed through an automated CI/CD pipeline with Jenkins.
 
-Tech Stack
+#Tech Stack
 
 AWS ECS (Fargate) – Serverless container orchestration
 
@@ -16,7 +16,7 @@ Jenkins – CI/CD automation
 
 Python – Web application
 
-Features
+#Features
 
 Containerizes a Python-based web application using Docker.
 
@@ -36,9 +36,9 @@ Docker Image Build & Push – Jenkins builds the image and pushes it to AWS ECR.
 
 Deployment to AWS ECS – The new container image is deployed to ECS Fargate.
 
-Setup Instructions
+#Setup Instructions
 
-Prerequisites
+#1.Prerequisites
 
 AWS CLI installed and configured
 
@@ -48,7 +48,7 @@ Jenkins set up with necessary plugins
 
 AWS IAM roles for ECS, ECR, and Jenkins
 
-Steps
+#2.Steps
 
 Clone the repository:
 
@@ -73,3 +73,7 @@ Deploy to ECS Fargate:
 Update ECS Task Definition with the new image.
 
 Update ECS Service to use the new task definition.
+
+#Conclusion
+
+This project showcases a fully automated pipeline for deploying a containerized Python web application on AWS ECS Fargate. It leverages Docker, AWS ECR, and Jenkins to ensure smooth deployments and scalability.
